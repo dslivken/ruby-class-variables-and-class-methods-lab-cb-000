@@ -43,6 +43,10 @@ class Song
     @@artists.keys
   end
 
+  def self.artist_count
+    @@artists
+  end
+
 end
 
 
