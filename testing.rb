@@ -40,7 +40,7 @@ class Song
   end
 
   def self.artists
-    @@artists
+    @@artists.keys
   end
 
 end
