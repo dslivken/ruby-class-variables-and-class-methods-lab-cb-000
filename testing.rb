@@ -4,7 +4,7 @@ class Song
 
   attr_accessor :name, :artist, :genre
 
-  @GENRES = {}
+  @@genres = {}
 
   @@scount = 0
 
@@ -17,10 +17,10 @@ class Song
   end
 
   def update_genres (genre)
-    if !@GENRES.keys.include?(genre)
-      @GENRES[genre]=0
+    if !@@genres.keys.include?(genre)
+      @@genres[genre]=0
     end
-    @GENRES[genre] +=1
+    @@genres[genre] +=1
   end
 
 end
