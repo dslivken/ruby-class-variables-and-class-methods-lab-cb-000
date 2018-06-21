@@ -17,23 +17,18 @@ class Song
     update_artists(artist)
   end
 
-  # def update_genres (genre)
-  #   if !@@genres.keys.include?(genre)
-  #     @@genres[genre]=0
-  #   end
-  #   @@genres[genre] +=1
-  # end
-
   def update_genres (genre)
-    if !@@genres.include?(genre)
-      @@genres<<genre
+    if !@@genres.keys.include?(genre)
+      @@genres[genre]=0
     end
+    @@genres[genre] +=1
   end
 
   def update_artists (artist)
-    if !@@artists.include?(artist)
-      @@artists<<artist
+    if !@@artists.keys.include?(artist)
+      @@artists[artist]=0
     end
+    @@artists[artist] +=1
   end
 
   def self.genres
