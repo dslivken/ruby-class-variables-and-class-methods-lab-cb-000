@@ -23,6 +23,11 @@ class Song
     @@genres[genre] +=1
   end
 
+  def self.genres
+    @@genres
+  end
+
+
 end
 
 
