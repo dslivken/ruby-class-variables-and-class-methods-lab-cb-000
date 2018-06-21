@@ -26,7 +26,7 @@ class Song
 
   def update_genres (genre)
     if !@@genres.include?(genre)
-      @@genre<<genre
+      @@genres<<genre
     end
   end
 
