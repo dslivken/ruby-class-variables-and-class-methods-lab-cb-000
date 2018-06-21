@@ -49,6 +49,10 @@ class Song
     @@artists
   end
 
+  def self.list_all
+    SONGS
+  end
+
 end
 
 
