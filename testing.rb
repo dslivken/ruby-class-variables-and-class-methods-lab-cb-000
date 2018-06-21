@@ -7,6 +7,7 @@ class Song
   @@genres = {}
   @@scount = 0
   @@artists = {}
+  SONGS=[]
 
   def initialize (name, artist, genre)
     @name=name
@@ -15,6 +16,7 @@ class Song
     @@scount +=1
     update_genres(genre)
     update_artists(artist)
+    SONGS<<self
   end
 
   def update_genres (genre)
