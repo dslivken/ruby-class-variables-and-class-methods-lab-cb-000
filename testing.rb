@@ -43,5 +43,7 @@ end
 
 
 song1=Song.new("Song 1", "David", "Rap")
-
+song2=Song.new("Song 2", "Tom", "Jazz")
+song3=Song.new("Song 3", "Howard", "Rap")
+song4=Song.new("Song 4", "David", "Rock")
 binding.pry
