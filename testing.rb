@@ -16,7 +16,7 @@ class Song
     @@scount +=1
     update_genres(genre)
     update_artists(artist)
-    SONGS<<self
+    @@all<<self
   end
 
   def update_genres (genre)
