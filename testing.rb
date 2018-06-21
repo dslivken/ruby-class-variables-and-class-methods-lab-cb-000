@@ -38,6 +38,9 @@ class Song
     @@scount
   end
 
+  def self.artists
+    @@artists
+  end
 
 end
 
