@@ -31,6 +31,6 @@ class Song
 end
 
 
-
+song1=Song.new("Song 1", "David", "Rap")
 
 binding.pry
